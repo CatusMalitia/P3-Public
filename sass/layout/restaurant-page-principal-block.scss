@@ -124,15 +124,13 @@
             margin-left: 5px;
             margin-right: 5px;
             @include color-box-restaurant-shadow;
-            @include small-desktop{
-                animation-name: apparition-menu-block;
-                animation-fill-mode: forwards;
-                animation-duration: 1600ms;
-                opacity: 0;
-                @for $i from 1 through $number-block-menu{
-                    &--#{$i} {
-                        animation-delay: calc($anim-delay-block-menu * $i);
-                    }
+            animation-name: apparition-menu-block;
+            animation-fill-mode: forwards;
+            animation-duration: 1600ms;
+            opacity: 0;
+            @for $i from 1 through $number-block-menu{
+                &--#{$i} {
+                    animation-delay: calc($anim-delay-block-menu * $i);
                 }
             }
         }
