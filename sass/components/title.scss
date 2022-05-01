@@ -17,6 +17,7 @@
         margin-left: 14px;
         font-size: 26px;
         color: $color-arrow;
+        background-color: transparent;
         @include small-desktop{
             margin-left: 28px;
         }

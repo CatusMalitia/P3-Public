@@ -162,7 +162,6 @@
         }
         &:hover .header-restaurant__icon-check{
             @include icon-effect-active;
-            color: transparent;
         }
         @include color-box-restaurant-shadow;
         @include small-desktop{
