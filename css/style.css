@@ -34,7 +34,7 @@
   0% {
     opacity: 0;
   }
-  99.99% {
+  85% {
     opacity: 0;
   }
   100% {
@@ -343,12 +343,20 @@ body {
   margin: auto;
   margin-top: 14px;
   margin-bottom: 14px;
-  text-overflow: ellipsis;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
   cursor: auto;
   box-shadow: 3px 3px 10px #cccccc;
+}
+.header-restaurant__container:hover .header-restaurant__plat {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header-restaurant__container:not(:hover) .header-restaurant__plat {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .header-restaurant__container:hover .header-restaurant__container-validate {
   width: 90px;
@@ -433,12 +441,6 @@ body {
   margin-left: 10px;
   width: 80%;
   max-width: 250px;
-  flex-wrap: wrap;
-}
-.header-restaurant__plat:hover {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .header-restaurant__description-and-price {
   display: flex;
@@ -1079,7 +1081,7 @@ body {
 }
 .restaurant__link {
   text-decoration: none;
-  color: transparent;
+  background-color: transparent;
 }
 .restaurant__info-aside-text {
   width: 120px;
