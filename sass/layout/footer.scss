@@ -10,20 +10,25 @@
 }
 
 .footer{
->ul{
-    list-style-type: none;
+    >ul{
+        list-style-type: none;
+    }
+    &__title{
+        font-family: $font-title;
+        font-size: 18px;
+        padding-top: 26px;
+        padding-bottom: 20px;
+    }
+    &__1 , &__2 , &__3{
+        margin-bottom: 6px;
+    }
+    &__icon{
+        color: $color-footer-text;
+        width: 30px;
+    }
 }
-&__title{
-    font-family: $font-title;
-    font-size: 18px;
-    padding-top: 26px;
-    padding-bottom: 20px;
-}
-&__1 , &__2 , &__3{
-    margin-bottom: 6px;
-}
-&__icon{
+
+.footer__4-link{
+    text-decoration: none;
     color: $color-footer-text;
-    width: 30px;
-}
 }
