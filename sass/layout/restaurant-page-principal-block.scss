@@ -160,11 +160,9 @@
         &:hover .header-restaurant__container-validate{
             width: 90px;
             transition-duration: 400ms;
-            background-color: transparent;
         }
         &:hover .header-restaurant__icon-check{
             @include icon-effect-active;
-            background-color: transparent;
         }
         @include color-box-restaurant-shadow;
         @include small-desktop{
