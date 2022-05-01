@@ -1,0 +1,222 @@
+
+@mixin box-bubble{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -16px;
+    @include small-mobile{
+        margin-left: 0px;
+    }
+}
+
+@mixin bubble-number{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid $color-primary;
+    border-radius: 25px;
+    background-color: $color-primary;
+    color: $color-text-tertiary;
+    font-family: $font-text;
+}
+
+@mixin color-box-fonctionnaly-shadow ($color:$color-box){
+    @if (lightness($color) < 25%){
+        $color: lightnen($color, 30%)
+    }
+    @else{
+        $color: darken($color, 30%)
+    }
+    box-shadow: 3px 3px 10px $color;
+}
+
+@mixin restaurant-block {
+    width: 100%;
+    height: 100%;
+    background-color: $color-block;
+}
+
+@mixin restaurant-container {
+    width: 90%;
+    min-width: 220px;
+    max-width: 700px;
+    height: 220px;
+    border-radius: 25px;
+    background-color: $color-box-secondary;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    &:hover{
+        opacity: 0.9;
+        box-shadow: 0px 5px 20px -4px;
+        transition-duration: 500ms;
+    }
+}
+
+@mixin aside-info-text{
+    width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid $color-tertiary;
+    background-color: $color-tertiary;
+    font-family: $font-text;
+    font-size: 16px;
+}
+
+@mixin color-box-restaurant-shadow ($color:$color-box-secondary){
+    @if (lightness($color) < 25%){
+        $color: lightnen($color, 20%)
+    }
+    @else{
+        $color: darken($color, 20%)
+    }
+    box-shadow: 3px 3px 10px $color;
+}
+
+@mixin color-btn-shadow ($color:$color-box-secondary){
+    @if (&:hover == true) and (lightness($color) < 25%){
+        $color: lightnen($color, 40%)
+    }
+    @else{
+        $color: darken($color, 40%)
+    }
+    opacity: 0.9;
+    transition-duration: 400ms;
+    box-shadow: 0px 8px 5px -5px $color;
+}
+
+@mixin color-text-aside-info ($color:$color-tertiary){
+    @if (lightness($color) < 25%){
+        $color: lightnen($color, 36%)
+    }
+    @else{
+        $color: darken($color, 36%)
+    }
+    color: $color;
+}
+
+@mixin desktop{
+    @media screen and (min-width: map-get($breakpoint , desktop)){
+        @content;
+    }
+}
+@mixin small-desktop{
+    @media screen and (min-width: map-get($breakpoint , small-desktop)){
+        @content;
+    }
+}
+@mixin small-mobile{
+    @media screen and (max-width: map-get($breakpoint , small-mobile)){
+        @content;
+    }
+}
+@mixin tablette{
+        @media screen and (min-width: map-get($breakpoint , tablette)){
+            @content;
+        }
+    }
+@mixin validate-effect-inactive{
+        @if (&:hover==false){
+            width: 0px;
+            transition-duration: 300ms;
+            transition-delay: 200ms;
+        }
+    }
+@mixin icon-effect-active{
+    @if (&:hover==true){
+        transform: rotate(360deg);
+        transition-duration: 280ms;
+        transition-delay: 200ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes border-name-effect-tablette {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+@keyframes border-name-effect-desktop {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 160px;
+    }
+}
+
+@keyframes apparition-menu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes apparition-menu-block {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes page-after-spinner{
+    0%{
+        opacity: 0;
+    }
+    99.99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        background-color: white;
+        
+
+    }    
+}
+
+@keyframes page-spinner{
+    0%{
+        transform: scale(1);
+    }
+    99.99%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+        
+
+    }    
+}
+
+@keyframes spin {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    } 
+}
+
+@mixin container-wrap {
+    @if (width≤40px){
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+
+
+
