@@ -357,14 +357,12 @@
 .header-restaurant__container:hover .header-restaurant__container-validate {
   width: 90px;
   transition-duration: 400ms;
-  background-color: transparent;
 }
 .header-restaurant__container:hover .header-restaurant__icon-check {
   transform: rotate(360deg);
   transition-duration: 280ms;
   transition-delay: 200ms;
   animation-fill-mode: forwards;
-  background-color: transparent;
 }
 @media screen and (min-width: 959px) {
   .header-restaurant__container {
@@ -785,7 +783,7 @@
   width: 100%;
   height: 100%;
   animation-name: page-after-spinner;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
