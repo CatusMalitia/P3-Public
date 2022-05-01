@@ -71,14 +71,10 @@
   font-family: "Shrikhand";
   src: url(font/Shrikhand-Regular.ttf);
 }
-@font-face {
-  font-family: "Roboto";
-  src: url(font/Roboto-Regular.ttf);
+body {
+  margin: 0;
 }
-@font-face {
-  font-family: "Shrikhand";
-  src: url(font/Shrikhand-Regular.ttf);
-}
+
 .header__btn-explore {
   width: 260px;
   height: 50px;
@@ -326,10 +322,6 @@
     margin-left: 5px;
     margin-right: 5px;
     box-shadow: 3px 3px 10px #cccccc;
-  }
-}
-@media screen and (min-width: 959px) and (min-width: 959px) {
-  .header-restaurant__block-menu {
     animation-name: apparition-menu-block;
     animation-fill-mode: forwards;
     animation-duration: 1600ms;
@@ -1105,6 +1097,7 @@
 }
 .restaurant__link {
   text-decoration: none;
+  touch-action: none;
 }
 .restaurant__info-aside-text {
   width: 120px;
