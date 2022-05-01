@@ -1,7 +1,7 @@
 .spinner_page{
     width: 100%;
     height: 100%;
-    background: radial-gradient(at 25% 50%, $color-button-gradient, 1200px, $color-button);
+    background: radial-gradient(at 25% 50%, $color-button-gradient, 80%, $color-button);
 }
 .spinner_page{
     &__container-logo-and-spin{
@@ -480,7 +480,7 @@
     }
     &__link{
         text-decoration: none;
-        touch-action: none;
+        touch-action: auto;
     }
     &__info-aside-text{
        @include aside-info-text;

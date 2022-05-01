@@ -154,13 +154,15 @@
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        cursor: pointer;
+        cursor: auto;
         &:hover .header-restaurant__container-validate{
             width: 90px;
             transition-duration: 400ms;
+            color: transparent;
         }
         &:hover .header-restaurant__icon-check{
             @include icon-effect-active;
+            color: transparent;
         }
         @include color-box-restaurant-shadow;
         @include small-desktop{
