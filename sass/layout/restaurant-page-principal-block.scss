@@ -150,11 +150,19 @@
         margin: auto;
         margin-top: 14px;
         margin-bottom: 14px;
-        text-overflow: ellipsis;
         display: flex;
         justify-content: space-between;
-        overflow: hidden;
         cursor: auto;
+        &:hover .header-restaurant__plat{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &:not(:hover)  .header-restaurant__plat{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         &:hover .header-restaurant__container-validate{
             width: 90px;
             transition-duration: 400ms;
@@ -210,10 +218,6 @@
         margin-left: 10px;
         width: 80%;
         max-width: 250px;
-        flex-wrap: wrap;
-        &:hover{
-            @include container-wrap;
-        }
     }
     &__description-and-price{
         display: flex;

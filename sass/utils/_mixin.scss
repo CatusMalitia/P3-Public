@@ -172,7 +172,7 @@
     0%{
         opacity: 0;
     }
-    99.99%{
+    85%{
         opacity: 0;
     }
     100%{
@@ -193,10 +193,10 @@
 }
 
 @mixin container-wrap {
-    @if (width≤40px){
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    @if height==30px {
+        color: blue;
+    }@else{
+        color: red;
     }
 }
 

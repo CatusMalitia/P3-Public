@@ -470,7 +470,7 @@
     }
     &__link{
         text-decoration: none;
-        color: transparent;
+        background-color: transparent;
     }
     &__info-aside-text{
        @include aside-info-text;
