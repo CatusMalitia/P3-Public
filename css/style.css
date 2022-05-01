@@ -186,6 +186,11 @@
   width: 30px;
 }
 
+.footer__4-link {
+  text-decoration: none;
+  color: white;
+}
+
 .header-restaurant__picture-container {
   width: 99%;
   height: 250px;
