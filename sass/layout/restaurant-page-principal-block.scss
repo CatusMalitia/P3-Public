@@ -152,6 +152,7 @@
         margin-bottom: 14px;
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
         cursor: auto;
         &:hover .header-restaurant__plat{
             white-space: nowrap;
