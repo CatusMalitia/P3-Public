@@ -133,7 +133,9 @@ body {
   margin-left: 14px;
   font-size: 26px;
   color: #2a2929;
+  background-clip: text;
   background-color: transparent;
+  cursor: auto;
 }
 @media screen and (min-width: 959px) {
   .header__title-icon-arrow {
@@ -175,6 +177,7 @@ body {
 .footer__4-link {
   text-decoration: none;
   color: white;
+  background-clip: text;
   background-color: transparent;
 }
 
@@ -1081,7 +1084,9 @@ body {
 }
 .restaurant__link {
   text-decoration: none;
+  background-clip: text;
   background-color: transparent;
+  cursor: auto;
 }
 .restaurant__info-aside-text {
   width: 120px;
