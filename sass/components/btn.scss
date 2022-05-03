@@ -1,5 +1,5 @@
 .header__btn-explore {
-    width: 260px;
+    width: 220px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -9,7 +9,7 @@
     border-radius: 25px;
     color: white;
     font-family: $font-text;
-    background: radial-gradient(at 25% 10%, $color-button-gradient, 230px, $color-button);
+    background: radial-gradient(at 5% 0%, $color-button-gradient, 78%, $color-button);
     @include desktop{
         margin-top: -20px;
     }
