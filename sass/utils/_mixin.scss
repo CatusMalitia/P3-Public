@@ -9,8 +9,6 @@
     box-shadow: 3px 3px 10px $color;
 }
 
-<<<<<<< HEAD
-=======
 @mixin aside-info-text{
     width: 120px;
     padding-left: 12px;
@@ -27,7 +25,6 @@
     font-weight: bold;
 }
 
->>>>>>> 9fd72bb0fe749463422b70415cd7a4e61cfe0e16
 @mixin color-box-restaurant-shadow ($color:$color-box-secondary){
     @if (lightness($color) < 25%){
         $color: lightnen($color, 20%)
