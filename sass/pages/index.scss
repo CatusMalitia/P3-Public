@@ -20,6 +20,9 @@
         width: 80%;
         background-image: transparent;
         filter: drop-shadow(4px 0 0 $color-tertiary);
+        @include tablette {
+            width: 70%;
+        }
         @include small-desktop{
             width: 30%;
         }
@@ -30,7 +33,7 @@
         height: 80px;
         position: absolute;
         top: 50%;
-        left: calc(50% - (100px / 2));
+        left: calc(50% - (80px / 2));
     }
     &__spin{
         width: 11px;
@@ -328,7 +331,7 @@
         }
     }
     &__box{
-        width: 90%;
+        width: 85%;
         height: 70px;
         line-height: 70px;
         border: 1px solid $color-box;
@@ -343,6 +346,7 @@
         font-weight: bold;
         @include color-box-fonctionnaly-shadow;
         @include small-desktop{
+            width: 90%;
             margin-left: 20px;
             margin-right: 20px;
         }
@@ -393,9 +397,10 @@
 }
 
 .restaurant{
-    @include restaurant-block;
     margin-top: 100px;
-    height: 1160px;
+    height: 1220px;
+    width: 100%;
+    background-color: $color-block;
     @include small-desktop{
         height: 770px;
         margin-top: 60px;
@@ -412,7 +417,7 @@
     @media screen and (min-width:768px) {
         content: "";
         display: block;
-        width: 100px;
+        width: 70px;
         height: 5px;
         background-color: $color-tertiary;
         margin-top: 6px;
@@ -431,13 +436,26 @@
         }
     }
     &__container{
-        @include restaurant-container;
-        @include color-box-restaurant-shadow;
-        @include small-desktop{
-            margin-right: 8px;
-            margin-left: 8px;
-            height: 100%;
-        }
+            width: 90%;
+            min-width: 220px;
+            max-width: 700px;
+            height: 240px;
+            border-radius: 25px;
+            background-color: $color-box-secondary;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            @include color-box-restaurant-shadow;
+            @include small-desktop{
+                margin-right: 8px;
+                margin-left: 8px;
+                height: 100%;
+            }
+            &:hover{
+                opacity: 0.9;
+                box-shadow: 0px 5px 20px -4px;
+                transition-duration: 500ms;
+            }
     }
     &__picture{
         width: 100%;
@@ -454,7 +472,7 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        bottom: 20px;
+        bottom: 14px;
     }
     &__text{
         color: $color-text-primary;
@@ -468,12 +486,6 @@
         font-weight: bold;
         margin-bottom: 4px;
     }
-    &__link{
-        text-decoration: none;
-        background-clip: text;
-        background-color: transparent;
-        cursor: auto;
-    }
     &__info-aside-text{
        @include aside-info-text;
        @include color-text-aside-info;
@@ -484,7 +496,8 @@
         display: flex;
         justify-content: flex-end;
         position: relative;
-        bottom: 140px;
+        bottom: 160px;
+        margin-right: -10px;
         @include small-desktop{
             bottom: 380px;
         }
@@ -524,4 +537,13 @@
             opacity: 1;
         }
     }
+    &__link{
+        text-decoration: none;
+    }
+}
+a:any-link{
+    color: transparent;
+}
+.footer-index{
+    margin-top: -12px;
 }
