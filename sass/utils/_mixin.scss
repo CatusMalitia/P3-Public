@@ -9,6 +9,25 @@
     box-shadow: 3px 3px 10px $color;
 }
 
+<<<<<<< HEAD
+=======
+@mixin aside-info-text{
+    width: 120px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid $color-tertiary;
+    background-color: $color-tertiary;
+    font-family: $font-text;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+>>>>>>> 9fd72bb0fe749463422b70415cd7a4e61cfe0e16
 @mixin color-box-restaurant-shadow ($color:$color-box-secondary){
     @if (lightness($color) < 25%){
         $color: lightnen($color, 20%)
