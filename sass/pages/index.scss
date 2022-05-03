@@ -32,41 +32,24 @@
         width: 80px;
         height: 80px;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: calc(50% - (80px / 2));
     }
     &__spin{
-        width: 11px;
-        height: 11px;
+        width: 14px;
+        height: 14px;
         background-color: $color-tertiary;
         border-radius: 100%;
         position: absolute;
         top: calc(50% - (11px / 2));
+        opacity: 0;
         animation-name: spin;
         animation-duration: 1s;
-        animation-fill-mode: both;
+        animation-fill-mode: forwards;
         animation-iteration-count: 6;
         @for $i from 1 through $number-spin{
             &--#{$i} {
                 animation-delay: calc($anim-delay-spin * $i);
-            }
-        }
-    }
-    &__spin-mini{
-        width: 8px;
-        height: 8px;
-        background-color: $color-tertiary;
-        border-radius: 100%;
-        position: absolute;
-        top: calc(50% - (11px / 2));
-        animation-name: spin;
-        animation-duration: 2s;
-        animation-fill-mode: both;
-        animation-iteration-count: 3;
-        transform: scale(0);
-        @for $i from 1 through $number-spin{
-            &--#{$i} {
-                animation-delay: calc($anim-delay-spin-mini * $i);
             }
         }
     }

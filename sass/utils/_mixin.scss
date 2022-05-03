@@ -95,13 +95,22 @@
 
 @mixin icon-effect-inactive{
     @if (&:hover==false){
-        transform: translateX(10px);
-        transition-duration: 280ms;
-        transition-delay: 200ms;
+        animation-name: icon-effect-inactive;
+        animation-duration: 280ms;
+        animation-delay: 200ms;
         animation-fill-mode: forwards;
     }
 }
 
+@keyframes icon-effect-inactive {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+    
+}
 @keyframes border-name-effect-tablette {
     0%{
         width: 0px;
@@ -152,11 +161,11 @@
 @keyframes spin {
     0%{
         transform: scale(1);
-        opacity: 1;
+        opacity: 0;
     }
     100%{
         transform: scale(0);
-        opacity: 0;
+        opacity: 1;
     } 
 }
 
