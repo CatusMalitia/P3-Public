@@ -7,9 +7,7 @@
     font-family: $font-text;
     font-size: 16px;
     color: $color-footer-text;
-    @include small-desktop{
-        margin-top: -56px;
-    }
+    margin-top: -56px;
 }
 
 .footer{
