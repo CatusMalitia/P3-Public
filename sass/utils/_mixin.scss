@@ -80,13 +80,22 @@
 @mixin validate-effect-inactive{
         @if (&:hover==false){
             width: 0px;
-            transition-duration: 300ms;
+            transition-duration: 280ms;
             transition-delay: 200ms;
         }
     }
 @mixin icon-effect-active{
     @if (&:hover==true){
         transform: rotate(360deg);
+        transition-duration: 280ms;
+        transition-delay: 200ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@mixin icon-effect-inactive{
+    @if (&:hover==false){
+        transform: translateX(10px);
         transition-duration: 280ms;
         transition-delay: 200ms;
         animation-fill-mode: forwards;
