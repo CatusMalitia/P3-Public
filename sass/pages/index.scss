@@ -34,6 +34,12 @@
         position: absolute;
         top: 40%;
         left: calc(50% - (80px / 2));
+        @include tablette{
+            top: 45%;
+        }
+        @include small-desktop{
+            top: 50%;
+        }
     }
     &__spin{
         width: 14px;
@@ -130,83 +136,6 @@
       top: 59%;
       left: 3.1%;
     }
-    &__spin-mini--1 {
-    animation-delay: 0.125s;
-    }
-    &__spin-mini--2 {
-      animation-delay: 0.25s;
-      top: 26%;
-      left: 3.1%;
-    }
-    &__spin-mini--3 {
-      animation-delay: 0.375s;
-      top: 12.5%;
-      left: 12.7%;
-    }
-    &__spin-mini--4 {
-      animation-delay: 0.5s;
-      top: 3.9%;
-      left: 27.3%;
-    }
-    &__spin-mini--5 {
-    animation-delay: 0.625s;
-    top: 0%;
-    left: calc(50% - (11px / 2));
-    }
-    &__spin-mini--6 {
-    animation-delay: 0.75s;
-    top: 3.9%;
-    right: 27.3%;
-    }
-    &__spin-mini--7 {
-    animation-delay: 0.875s;
-    top: 12.5%;
-    right: 12.7%;
-    }
-    &__spin-mini--8 {
-    animation-delay: 1s;
-    top: 26%;
-    right: 3.1%;
-    }
-    &__spin-mini--9 {
-    animation-delay: 1.125s;
-    right: 0%;
-    }
-    &__spin-mini--10 {
-    animation-delay: 1.25s;
-    top: 59%;
-    right: 3.1%;
-    }
-    &__spin-mini--11 {
-    animation-delay: 1.375s;
-    top: 73.5%;
-    right: 12.7%;
-    }
-    &__spin-mini--12 {
-    animation-delay: 1.5s;
-    top: 83%;
-    right: 27%;
-    }
-    &__spin-mini--13 {
-    animation-delay: 1.625s;
-    top: calc(100% - 11px );
-    left: calc(50% - (11px / 2));
-    }
-    &__spin-mini--14 {
-    animation-delay: 1.75s;
-    top: 83%;
-    left: 27%;
-    }
-    &__spin-mini--15 {
-    animation-delay: 1.875s;
-    top: 73.5%;
-    left: 12.7%;
-    }
-    &__spin-mini--16 {
-    animation-delay: 2s;
-    top: 59%;
-    left: 3.1%;
-    }
 }
 
 .page-after-spinner{
@@ -297,7 +226,7 @@
         @media screen and (min-width:768px) {
             content: "";
             display: block;
-            width: 100px;
+            width: 80px;
             height: 5px;
             background-color: $color-tertiary;
             margin-top: 6px;
@@ -434,7 +363,7 @@
     @media screen and (min-width:768px) {
         content: "";
         display: block;
-        width: 70px;
+        width: 60px;
         height: 5px;
         background-color: $color-tertiary;
         margin-top: 6px;

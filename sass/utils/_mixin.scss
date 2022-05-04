@@ -35,6 +35,16 @@
     box-shadow: 3px 3px 10px $color;
 }
 
+@mixin color-block-menu-shadow ($color:$color-box-secondary){
+    @if (lightness($color) < 25%){
+        $color: lightnen($color, 25%)
+    }
+    @else{
+        $color: darken($color, 25%)
+    }
+    box-shadow: 3px 3px 10px $color;
+}
+
 @mixin color-btn-shadow ($color:$color-box-secondary){
     @if (&:hover == true) and (lightness($color) < 25%){
         $color: lightnen($color, 40%)
@@ -124,7 +134,7 @@
         width: 0px;
     }
     100%{
-        width: 160px;
+        width: 120px;
     }
 }
 
@@ -170,7 +180,7 @@
 }
 
 @mixin container-wrap {
-    @if height==30px {
+    @if height >= 30px {
         color: blue;
     }@else{
         color: red;
