@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     background: radial-gradient(at 5% 0%, $color-button-gradient, 78%, $color-button);
+    touch-action: none;
 }
 .spinner_page{
     &__container-logo-and-spin{
@@ -144,7 +145,6 @@
     animation-name: page-after-spinner;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    touch-action: none;
 }
 
 .header{
