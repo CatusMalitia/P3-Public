@@ -12,7 +12,7 @@
     &__logo{
         width: 100%;
         text-align: center;
-        position: absolute;
+        position: fixed;
         top: 25%;
         left: calc(50% - (100% / 2));
     }
@@ -31,7 +31,7 @@
         display: block;
         width: 80px;
         height: 80px;
-        position: absolute;
+        position: fixed;
         top: 40%;
         left: calc(50% - (80px / 2));
         @include tablette{
@@ -144,6 +144,7 @@
     animation-name: page-after-spinner;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    touch-action: none;
 }
 
 .header{

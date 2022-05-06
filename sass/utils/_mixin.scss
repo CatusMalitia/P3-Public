@@ -112,15 +112,6 @@
     }
 }
 
-@keyframes icon-effect-inactive {
-    0%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(10px);
-    }
-    
-}
 @keyframes border-name-effect-tablette {
     0%{
         width: 0px;
@@ -177,14 +168,6 @@
         transform: scale(0);
         opacity: 1;
     } 
-}
-
-@mixin container-wrap {
-    @if height >= 30px {
-        color: blue;
-    }@else{
-        color: red;
-    }
 }
 
 

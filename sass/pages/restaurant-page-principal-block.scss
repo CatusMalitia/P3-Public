@@ -197,7 +197,7 @@
         position: relative;
         top: calc(50% - (30px / 2));
         left: 18%;
-        @include icon-effect-inactive;
+        margin-left: 9px;
     }
     &__container-inside-info{
         width: 100%;
