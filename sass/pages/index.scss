@@ -145,6 +145,7 @@
     animation-name: page-after-spinner;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    touch-action: auto;
 }
 
 .header{
