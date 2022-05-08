@@ -33,6 +33,7 @@
 @keyframes page-after-spinner {
   0% {
     opacity: 0;
+    touch-action: none;
   }
   85% {
     opacity: 0;
@@ -40,6 +41,7 @@
   100% {
     opacity: 1;
     background-color: white;
+    touch-action: auto;
   }
 }
 @keyframes spin {
@@ -473,7 +475,6 @@ body {
   width: 100%;
   height: 100%;
   background: radial-gradient(at 5% 0%, #dd6bc1, 78%, #9356DC);
-  touch-action: none;
 }
 
 .spinner_page__container-logo-and-spin {
@@ -666,7 +667,6 @@ body {
   animation-name: page-after-spinner;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-  touch-action: auto;
 }
 
 .header__container {
