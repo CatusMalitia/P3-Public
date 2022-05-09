@@ -38,6 +38,9 @@
   85% {
     opacity: 0;
   }
+  99.99% {
+    touch-action: none;
+  }
   100% {
     opacity: 1;
     background-color: white;
