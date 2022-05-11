@@ -102,7 +102,6 @@
         animation-fill-mode: forwards;
     }
 }
-
 @mixin icon-effect-inactive{
     @if (&:hover==false){
         animation-name: icon-effect-inactive;
@@ -111,7 +110,6 @@
         animation-fill-mode: forwards;
     }
 }
-
 @keyframes border-name-effect-tablette {
     0%{
         width: 0px;
