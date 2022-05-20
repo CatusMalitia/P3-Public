@@ -30,6 +30,14 @@
     opacity: 1;
   }
 }
+@keyframes scale-menu-block {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
 @keyframes page-after-spinner {
   0% {
     opacity: 0;
@@ -232,7 +240,13 @@ body {
   }
 }
 .header-restaurant__container-icon-heart {
-  width: 80px;
+  width: 60px;
+  margin-left: 60px;
+}
+@media screen and (min-width: 1000px) {
+  .header-restaurant__container-icon-heart {
+    margin-left: 0px;
+  }
 }
 .header-restaurant__name-icon {
   font-size: 29.6px;
@@ -341,7 +355,6 @@ body {
 .header-restaurant__block-menu:hover {
   box-shadow: 3px 3px 10px #bfbfbf;
   transform: scale(1.01);
-  transition: 300ms;
 }
 @media screen and (min-width: 1000px) {
   .header-restaurant__menu-container {
@@ -494,7 +507,6 @@ body {
 }
 .spinner_page__logo-img {
   width: 80%;
-  background-image: transparent;
   filter: drop-shadow(4px 0 0 #99E2D0);
 }
 @media screen and (min-width: 767px) {
